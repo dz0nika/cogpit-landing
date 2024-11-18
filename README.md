@@ -1,40 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Health Journal Landing Page
+
+This is a landing page for the Health Journal mobile application, built with Next.js and Tailwind CSS.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository
+2. Install dependencies:
+```npm install```
+3. Run the development server:
+```npm run dev```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Building for Production
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To create a production build, run:
+```npm run dev```
+Then, you can start the production server with:
+```npm start```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `app/page.tsx`: Main landing page component
+- `components/ui`: UI components from shadcn/ui
+- `public`: Static assets (images, etc.)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To customize the landing page, edit the `app/page.tsx` file. You can modify the content, styling, and layout as needed.
 
-## Learn More
+## Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+This project uses the following main dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- Next.js
+- React
+- Tailwind CSS
+- shadcn/ui components
+- Lucide React icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For a full list of dependencies, see the `package.json` file.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
